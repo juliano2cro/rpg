@@ -5,7 +5,7 @@ import rpg.core.Character;
 public class GameSettings {
 
     private static GameSettings instance;
-    private int maxStatPoints = 100;
+    private int maxStatPoints = 300;
 
     private GameSettings() {}
 
@@ -16,6 +16,7 @@ public class GameSettings {
         return instance;
     }
 
+    //bonus
     public boolean isValid(Character character) {
         return character.getPowerLevel() <= maxStatPoints;
     }

@@ -11,8 +11,15 @@ public class CharacterDAO implements DAO<Character> {
 
     @Override
     public void save(rpg.core.Character item) {
+        //bonus
+        if (!rpg.settings.GameSettings.getInstance().isValid(item)) {
+            throw new IllegalArgumentException(
+                    "dépasse le maximum de points autorisés "
+            );
+        }
         characters.add(item);
     }
+
 
     @Override
     public rpg.core.Character findByName(String name) {

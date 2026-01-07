@@ -78,6 +78,8 @@ public class Main {
         for (Character character : dao.findAll()) {
             System.out.println(character.getDescription());
             System.out.println("Puissance : " + character.getPowerLevel());
+
+            //bonus verifie que les stats de départ ne dépasse pas maxStatPoints = 300;
             System.out.println("Valide selon GameSettings : " +
                     GameSettings.getInstance().isValid(character));
             System.out.println("--------------------------------");
