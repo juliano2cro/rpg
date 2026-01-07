@@ -1,7 +1,5 @@
 package rpg;
 
-import rpg.Character;
-
 public class CharacterBuilder {
     private String name;
     private int strength;
