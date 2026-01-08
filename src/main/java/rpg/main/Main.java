@@ -117,7 +117,7 @@ public class Main {
         }
 
         // Bonus trie personnage
-        System.out.println("\n---- Tri par puissance ----");
+        System.out.println("\n---- Tri par nom ----");
         for (Character c : dao.sort()) {
             System.out.println(c.getDescription());
         }
